@@ -25,7 +25,7 @@ ts_atoms = optimize_transition_state(
     max_steps=300,
     hessian_recalc=50,                  # Recalc analytical hessian every N steps
     output_file='ts_optimization.log',  # Logfile containing the Sella output
-    fmax=0.005                          # the lower the number, the most strict is the optimization (0.005-0.01 recomended)
+    fmax=0.01                          # the lower the number, the most strict is the optimization (0.01 recomended)
 )
 
 # Save final optimized structure
